@@ -9,7 +9,7 @@ ENDCOLOR="\e[0m"
 # Update Flatpak packages if it is installed.
 if command -v flatpak &> /dev/null
 then
-    echo -ne $BLUE"[i] "$ENDCOLOR; echo "Updating Archlinux packages"
+    echo -ne $BLUE"[i] "$ENDCOLOR; echo "Updating Flatpak packages"
     sudo flatpak update
 else
     echo -ne $RED"[!] "$ENDCOLOR; echo "Flatpak not installed"
