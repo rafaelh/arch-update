@@ -10,8 +10,7 @@ ENDCOLOR="\e[0m"
 if command -v fwupdmgr &> /dev/null
 then
     echo -ne $BLUE"[i] "$ENDCOLOR; echo "Updating Firmware"
-    sudo fwupdmgr refresh     # download the latest metadata
-    sudo fwupdmgr update      # apply updates
+    sudo fwupdmgr refresh && sudo fwupdmgr update
 else
     echo -ne $RED"[!] "$ENDCOLOR; echo "fwupdmgr not installed"
 fi
