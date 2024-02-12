@@ -2,8 +2,8 @@
 
 # A template script to run a series of other scripts, for modularity. This will run any file ending
 # in .sh in the /scripts directory.
-
-if [ -d "./scripts" ] # Check the /scripts directory exists
+echo "TODO: Remove hardcoded path"
+if [ -d "~/dotfiles/scripts/arch-update/scripts" ] # Check the /scripts directory exists
 then
     number_of_scripts_to_run=$(ls -l scripts/*.sh 2>/dev/null | wc -l)
     if [ $number_of_scripts_to_run != 0 ] # Check that there are '.sh' scripts to run
